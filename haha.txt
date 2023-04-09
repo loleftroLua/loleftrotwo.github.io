@@ -29,13 +29,13 @@ if not syn and not (KRNL_LOADED or fluxus) then -- Phantom Forces uses Actors bu
 			return indexed
 		end)
 		repeat wait() until game:IsLoaded() and zzWorkspace:FindFirstChild("MenuLobby")
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/RealZzHub/MainV2/main/Games/PhantomForces.lua", true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/lol3233443/loleftrotwo.github.io/main/extrarealzzhub.txt", true))()
 	]])
 	wait(0.2)
 	zzTeleportService:TeleportToPlaceInstance(game.PlaceId, game.JobId)
 elseif syn and syn.run_on_actor then
     local Actor = getactors()[1]
-    local Script = game:HttpGet("https://raw.githubusercontent.com/RealZzHub/MainV2/main/Games/PhantomForces.lua", true)
+    local Script = game:HttpGet("https://raw.githubusercontent.com/lol3233443/loleftrotwo.github.io/main/extrarealzzhub.txt", true)
     syn.run_on_actor(Actor, Script)
 else
     game:GetService("Players").LocalPlayer:Kick("RealZzHub | Unsupported Executor")
