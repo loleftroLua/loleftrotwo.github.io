@@ -1,0 +1,25 @@
+suvarnabhumi airport disater (2022)
+Occupants 2011
+Fatalities 2006
+Survivors 5
+first aircraft = Thai airways flight 74
+                 Airbus A360-300
+                 Occupants 749
+                 Fatalities 749
+                 Survivors 0
+second aircraft = Thai lion air flight 49
+                 Airbus A360-400SE
+                 Occupants 634
+                 Fatalities 631
+                 Survivors 3
+thrid aircraft = thai airways flight 1005
+                 Boeing 747-100
+                 Occupants 241
+                 Fatalities 241
+                 Survivors 0
+fourth aircraft = thai airways flight 4470
+                 Airbus A330NEO
+                 Occupants 387
+                 Fatalities 385
+                 Survivors 2
+              
