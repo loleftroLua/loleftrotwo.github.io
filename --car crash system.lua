@@ -281,6 +281,61 @@ local Button = Spawn:CreateButton({
     end,
  })
 
+
+ local Label = Spawn:CreateLabel("HIGH TUNED")
+
+ local Button = Spawn:CreateButton({
+    Name = "[HIGH TUNED] Lemon door",
+    Callback = function()
+        local args = {
+            [1] = "[HIGH TUNED] Lemon door"
+        }
+        
+        game:GetService("ReplicatedStorage").SpawnCar:FireServer(unpack(args))
+        
+    end,
+ })
+
+
+
+ local Button = Spawn:CreateButton({
+    Name = "[HIGH TUNED] Cobra Simic",
+    Callback = function()
+        local args = {
+            [1] = "[HIGH TUNED] Cobra Simic"
+        }
+        
+        game:GetService("ReplicatedStorage").SpawnCar:FireServer(unpack(args))
+        
+    end,
+ })
+
+local Button = Spawn:CreateButton({
+    Name = "[HIGH TUNED] Cab",
+    Callback = function()
+        local args = {
+            [1] = "[HIGH TUNED] Cab"
+        }
+        
+        game:GetService("ReplicatedStorage").SpawnCar:FireServer(unpack(args))
+        
+    end,
+ })
+
+local Button = Spawn:CreateButton({
+    Name = "[HIGH TUNED] Sedan",
+    Callback = function()
+        local args = {
+            [1] = "[HIGH TUNED] Sedan"
+        }
+        
+        game:GetService("ReplicatedStorage").SpawnCar:FireServer(unpack(args))
+        
+    end,
+ })
+
+
+
 local Others = Window:CreateTab("Others", 4483362458) -- Title, Image
 local OthersSection = Others:CreateSection("Others")
 
