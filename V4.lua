@@ -63,6 +63,24 @@ local Button = bruh:CreateButton({
    end,
 })
 
+local Button = bruh:CreateButton({
+   Name = "GET DIAMOND(must stay 20 minute)",
+   Callback = function()
+    while true do wait(0.0001)	
+	local args = {
+        [1] = "player_990054525_claim_online_gift",
+        [2] = 10
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("Scripts"):WaitForChild("Common"):WaitForChild("Event"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+	end
+   end,
+})
+
+
+
+
+
 local Others = Window:CreateTab("Others", 4483362458) -- Title, Image
 local OthersSection = Others:CreateSection("Others")
 
