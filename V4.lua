@@ -69,7 +69,7 @@ local Button = bruh:CreateButton({
     while true do wait(2)	
 	local args = {
         [1] = "player_990054525_claim_online_gift",
-        [2] = 6
+        [2] = 7
     }
     
     game:GetService("ReplicatedStorage"):WaitForChild("Scripts"):WaitForChild("Common"):WaitForChild("Event"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
