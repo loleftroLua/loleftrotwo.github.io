@@ -64,7 +64,22 @@ local Button = bruh:CreateButton({
 })
 
 local Button = bruh:CreateButton({
-   Name = "GET DIAMOND(must stay 20 minute)",
+   Name = "GET ATTACK X2 INF (must stay 10 minute)",
+   Callback = function()
+    while true do wait(2)	
+	local args = {
+        [1] = "player_990054525_claim_online_gift",
+        [2] = 6
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("Scripts"):WaitForChild("Common"):WaitForChild("Event"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+	end
+   end,
+})
+
+
+local Button = bruh:CreateButton({
+   Name = "GET DIAMONF (must stay 20 minute)",
    Callback = function()
     while true do wait(0.0001)	
 	local args = {
@@ -76,7 +91,6 @@ local Button = bruh:CreateButton({
 	end
    end,
 })
-
 
 
 
