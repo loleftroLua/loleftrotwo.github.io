@@ -650,6 +650,13 @@ local Button = Crocs:CreateButton({
 })
 
 local Button = Crocs:CreateButton({
+	Name = "key flies (F12)",
+	Callback = function()
+     game.Players.herorocker8.PlayerGui.KeyPuzzle.CutType.KeyCut.Value = print()
+	end,
+})
+
+local Button = Crocs:CreateButton({
 	Name = "Remove Partygoers (level 13 only)",
 	Callback = function()
      game.Players.herorocker8.Backpack.PartygoerClient.Disabled = true  game.Workspace.Entites.Partygoer.Core.PartygoerClient.Disabled = true
@@ -1258,7 +1265,6 @@ local Button = Others:CreateButton({
         })
 	end,
 })
-
 
 
 
