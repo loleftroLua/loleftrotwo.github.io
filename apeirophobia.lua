@@ -3,6 +3,15 @@
 
 ----plr.title.Value = "Developer"
 
+---local Input = Crocs:CreateInput({
+	--Name = "key flies",
+	--PlaceholderText = game.Players.herorocker8.PlayerGui.KeyPuzzle.CutType.KeyCut.Value,
+	--RemoveTextAfterFocusLost = false,
+	--Callback = function(Value)
+		--game.Players.herorocker8.PlayerGui.KeyPuzzle.CutType.KeyCut.Value = Text
+	--end,
+--})
+
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
 local Window = Rayfield:CreateWindow({
