@@ -721,6 +721,17 @@ local Slider = Crocs:CreateSlider({
 	end,
 })
 
+local Input = Crocs:CreateInput({
+	Name = "key flies",
+	PlaceholderText = game.Players.herorocker8.PlayerGui.KeyPuzzle.CutType.KeyCut.Value,
+	RemoveTextAfterFocusLost = false,
+	Callback = function(Value)
+		local plr = game:GetService("Players").LocalPlayer
+
+         plr.PlayerGui.KeyPuzzle.CutType.KeyCut.Value = Text
+	end,
+})
+
 
 
 
