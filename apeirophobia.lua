@@ -635,7 +635,7 @@ local Button = Crocs:CreateButton({
     tl.Size = UDim2.new(1,0, 1,0)
     tl.BackgroundTransparency = 1
     tl.TextScaled = true
-    tl.TextColor3 = Color3.new(185, 0, 0)
+    tl.TextColor3 = Color3.new(255, 255, 255)
     tl.Text = v.Name
     end
     end
@@ -718,6 +718,17 @@ local Slider = Crocs:CreateSlider({
 	Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(s)
 		game:GetService("Players").LocalPlayer.Humanoid.Character.WalkSpeed = s
+	end,
+})
+
+local Input = Crocs:CreateInput({
+	Name = "key flies",
+	PlaceholderText = game.Players.herorocker8.PlayerGui.KeyPuzzle.CutType.KeyCut.Value,
+	RemoveTextAfterFocusLost = false,
+	Callback = function(Value)
+		local plr = game:GetService("Players").LocalPlayer
+
+         plr.PlayerGui.KeyPuzzle.CutType.KeyCut.Value = Text
 	end,
 })
 
