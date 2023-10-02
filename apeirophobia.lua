@@ -635,7 +635,7 @@ local Button = Crocs:CreateButton({
     tl.Size = UDim2.new(1,0, 1,0)
     tl.BackgroundTransparency = 1
     tl.TextScaled = true
-    tl.TextColor3 = Color3.new(185, 0, 0)
+    tl.TextColor3 = Color3.new(255, 255, 255)
     tl.Text = v.Name
     end
     end
@@ -646,6 +646,13 @@ local Button = Crocs:CreateButton({
 	Name = "Remove Stalker (level 14 only)",
 	Callback = function()
      game.Players.herorocker8.Backpack.Stalker.Disabled = true
+	end,
+})
+
+local Button = Crocs:CreateButton({
+	Name = "key flies (F12)",
+	Callback = function()
+     game.Players.herorocker8.PlayerGui.KeyPuzzle.CutType.KeyCut.Value = print
 	end,
 })
 
@@ -951,7 +958,7 @@ local Button = Gameui:CreateButton({
 
 local Keybind = Gameui:CreateKeybind({
 	Name = "Get 40 Lifes",
-	CurrentKeybind = "L",
+	CurrentKeybind = "",
 	HoldToInteract = false,
 	Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Keybind)
@@ -1202,7 +1209,7 @@ wait(.2)
 
 local Keybind = Others:CreateKeybind({
 	Name = "Shoot!!",
-	CurrentKeybind = "T",
+	CurrentKeybind = "",
 	HoldToInteract = false,
 	Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Keybind)
@@ -1258,7 +1265,6 @@ local Button = Others:CreateButton({
         })
 	end,
 })
-
 
 
 
